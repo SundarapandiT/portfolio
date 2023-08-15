@@ -1,0 +1,122 @@
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    flex-wrap:wrap ;
+    background-color: black;
+    background-image: url('webbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+div.web
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.658);
+    height: 100vh;
+    line-height: 2em;
+}
+.about
+{
+    flex-wrap: wrap;
+    width: 25%;
+    min-width: fit-content;
+    border: 1px solid black;
+    height: 36em;
+    text-align: center;
+   padding-top: 30px;
+   background-color:rgb(8, 7, 7,0.8);
+   margin-left: -10px;
+   height: 100vh;
+    
+    
+}
+.about a{
+    text-decoration: none;
+    display:flex;
+    padding: 25px;
+    padding-left: 7em;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px white;
+    color: rgb(136, 218, 13);
+
+}
+.about a:hover
+{
+    color: gold;
+    text-transform: uppercase;
+}
+
+footer
+{
+    max-width: 25%;
+    flex-wrap: wrap;
+    margin-top: -2em;
+}
+footer a img
+{
+    padding: 4px 20px;
+    border: 3px solid black;
+    border-radius: 10em;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.about img
+{
+    border-radius: 100px;
+    border: 3px solid rgb(136, 219, 10);
+}
+.body
+{
+    text-align: center;
+    padding: 30px;
+     padding-top: 12em;
+     padding-left: 7em;
+     flex: 2;
+     flex-wrap: wrap;
+}
+h1,h2,h3
+{
+    font-weight: 600;
+    color: rgb(41, 189, 12);
+    text-shadow: 1px 1px 2px rgba(83, 12, 216, 0.637);
+    
+}
+h1
+{
+    font-size: 1.5cm;
+}
+h2
+{
+    font-size: 1cm;
+}
+h3{
+    font-size: 27px;
+}
+b
+{
+    color: orange;
+}
+.content
+{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+fieldset 
+{
+    margin-top: -2em;
+    color: aliceblue;
+    font-size: 0.5cm;
+}
+legend
+{
+    text-align: center;
+}
+.content a
+{
+    text-decoration: none;
+    color: red;
+}
