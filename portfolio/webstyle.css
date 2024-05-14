@@ -1,62 +1,49 @@
-body
-{
-    font-family:'Times New Roman', Times, serif;
-    flex-wrap:wrap ;
+/* Base styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
     background-color: black;
     background-image: url('webbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: fit-content;
-    min-width: fit-content;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-div.web
-{
+
+div.web {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.658);
-    height: 100vh;
     line-height: 2em;
 }
-.about
-{
-    flex-wrap: wrap;
-    width: 25%;
-    min-width: fit-content;
+
+.about {
+    flex: 0 0 25%; /* 25% width on desktop */
+    min-width: 200px; /* Minimum width */
     border: 1px solid black;
-    height: 36em;
     text-align: center;
-   padding-top: 30px;
-   background-color:rgb(8, 7, 7,0.8);
-   margin-left: -10px;
-   height: 100vh;
-    
-    
+    padding-top: 30px;
+    background-color: rgb(8, 7, 7, 0.8);
+    height: 100vh;
 }
-.about a{
+
+.about a {
     text-decoration: none;
-    display:flex;
+    display: flex;
     padding: 25px;
     padding-left: 7em;
     font-weight: 600;
     font-size: 1.3em;
     text-shadow: 1px 1px 2px white;
     color: rgb(136, 218, 13);
-
 }
-.about a:hover
-{
+
+.about a:hover {
     color: gold;
     text-transform: uppercase;
 }
 
-footer
-{
-    max-width: 25%;
-    flex-wrap: wrap;
-    margin-top: -2em;
-}
-footer a img
-{
+footer a img {
     padding: 4px 20px;
     border: 3px solid black;
     border-radius: 10em;
@@ -65,58 +52,144 @@ footer a img
     display: inline-block;
 }
 
-.about img
-{
+.about img {
     border-radius: 100px;
     border: 3px solid rgb(136, 219, 10);
 }
-.body
-{
+
+.body {
     text-align: center;
     padding: 30px;
-     padding-top: 12em;
-     padding-left: 7em;
-     flex: 2;
-     flex-wrap: wrap;
+    padding-top: 12em;
+    padding-left: 7em;
+    flex: 2;
 }
-h1,h2,h3
-{
+
+h1, h2, h3 {
     font-weight: 600;
     color: rgb(41, 189, 12);
     text-shadow: 1px 1px 2px rgba(83, 12, 216, 0.637);
-    
 }
-h1
-{
+
+h1 {
     font-size: 1.5cm;
 }
-h2
-{
+
+h2 {
     font-size: 1cm;
 }
-h3{
+
+h3 {
     font-size: 27px;
 }
-b
-{
-    color: orange;
-}
-.content
-{
+
+.content {
     background-color: rgba(0, 0, 0, 0.521);
 }
-fieldset 
-{
+
+fieldset {
     margin-top: -2em;
     color: aliceblue;
     font-size: 0.5cm;
 }
-legend
-{
+
+legend {
     text-align: center;
 }
-.content a
-{
+
+.content a {
     text-decoration: none;
     color: red;
+}
+#more-detail {
+    background-color: #fff; /* Change background color as desired */
+    padding: 20px; /* Add padding for spacing */
+}
+
+#more-detail h1,
+#more-detail h2,
+#more-detail h3 {
+    font-weight: normal; /* Reset font weight */
+    color: #333; /* Reset color */
+    text-shadow: none; /* Remove text shadow */
+}
+
+/* Additional styles for h1, h2, and h3 if needed */
+#more-detail h1 {
+    font-size: 32px; /* Set font size for h1 */
+}
+
+#more-detail h2 {
+    font-size: 24px; /* Set font size for h2 */
+}
+
+#more-detail h3 {
+    font-size: 18px; /* Set font size for h3 */
+}
+/* CSS for the Another page in scrollable window */
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+section img {
+    /* display: inline; */
+    margin: 0 5%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+section a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+/* CSS for both mobile and desktop */
+@media screen and (max-width: 768px) {
+    .about {
+        flex: 0 0 100%; /* Full width on mobile */
+        margin-left: 0;
+    }
+    
+    .body {
+        padding-left: 0; /* No padding on left for mobile */
+    }
+    
 }
