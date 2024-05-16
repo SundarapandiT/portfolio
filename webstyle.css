@@ -132,7 +132,7 @@ section p {
 section img {
     display:inline-block;
     margin: 0 10px 20px; /* Center align images and add bottom margin */
-    max-width: 30%;
+    max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -153,30 +153,30 @@ section a {
 }
 /* Adjust image and paragraph styles */
 .project {
-    display: flex; /* Use flexbox layout for each project */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 30px; /* Add bottom margin between projects */
+    display: flex;
+    flex-direction: column; /* Display project items in a column on small screens */
+    margin-bottom: 30px;
 }
 
-
 .project img {
-    width: 40%; /* Set width of the image */
-    max-width: 400px; /* Limit the maximum width */
+    width: 100%; /* Make the image responsive to the container's width */
+    max-width: 400px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px; /* Add right margin to separate image from text */
+    margin-bottom: 20px; /* Add bottom margin to separate image from text */
 }
 
 .project p {
-     /* Allow paragraph to grow and fill available space */
     color: #ffffff;
     line-height: 1.4;
     font-size: 1.5em;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
-.project p b{
-        color: #e28011;
+
+.project p b {
+    color: #e28011;
 }
+
 
 section #download-button a {
     background-color: #22b00c; /* Green button background color */
