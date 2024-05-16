@@ -1,6 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: url('./portfolio/webbg.jpg') no-repeat center center fixed;
+    background: url('webbg.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     margin: 0;
@@ -132,7 +132,7 @@ section p {
 section img {
     display:inline-block;
     margin: 0 10px 20px; /* Center align images and add bottom margin */
-    max-width: 100%;
+    max-width: 30%;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -150,6 +150,32 @@ section a {
     text-decoration: none;
     color: #0ea5e6;
     font-weight: bold;
+}
+/* Adjust image and paragraph styles */
+.project {
+    display: flex; /* Use flexbox layout for each project */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 30px; /* Add bottom margin between projects */
+}
+
+
+.project img {
+    width: 40%; /* Set width of the image */
+    max-width: 400px; /* Limit the maximum width */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add right margin to separate image from text */
+}
+
+.project p {
+     /* Allow paragraph to grow and fill available space */
+    color: #ffffff;
+    line-height: 1.4;
+    font-size: 1.5em;
+    margin: 0; /* Remove default margin */
+}
+.project p b{
+        color: #e28011;
 }
 
 section #download-button a {
